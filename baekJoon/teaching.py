@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 def check():
     count = 0
     for w in word:
@@ -25,7 +28,7 @@ alpa = [0] * 26
 result = 0
 
 for i in range(N):
-    word.append(list(input()))
+    word.append(list(input().strip()))
 if K < 5:
     print(0)
 elif K == 26:
